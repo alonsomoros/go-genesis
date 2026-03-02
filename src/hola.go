@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func main() {
@@ -27,4 +28,16 @@ func main() {
 	// Dinámico v2
 	nombreAlin, apellidoAlin, edadAlin := "Alin", "Klk", 21
 	fmt.Println("Hello", nombreAlin, apellidoAlin, "with age", edadAlin)
+
+	// Convertir string a int
+	edadAlonStr := "21"
+	edadAlonInt, _ := strconv.Atoi(edadAlonStr)
+	fmt.Println("Edad de Alon:", edadAlonInt)
+	fmt.Println(edadAlonInt + edadAlonInt)
+
+	// Convertir int a string
+	edadAlonInt2 := 21
+	edadAlonStr2 := strconv.Itoa(edadAlonInt2)
+	fmt.Println("Edad de Alon:", edadAlonStr2)
+	fmt.Println(edadAlonStr2 + edadAlonStr2)
 }
