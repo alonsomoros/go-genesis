@@ -6,6 +6,16 @@ import (
 )
 
 func main() {
+	// holamundo()
+	// pruebas()
+	triangulo()
+}
+
+func holamundo() {
+	fmt.Println("Hola Mundo")
+}
+
+func pruebas() {
 	fmt.Println("Hola mundo")
 
 	// Tradicional
